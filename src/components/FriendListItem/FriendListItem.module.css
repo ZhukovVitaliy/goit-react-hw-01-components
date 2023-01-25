@@ -1,0 +1,31 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  background-color: beige;
+  border: 2px lightcoral;
+}
+
+.online {
+  display: block;
+
+  width: 10px;
+  height: 10px;
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+
+.offline {
+  display: block;
+  justify-content: center;
+
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}

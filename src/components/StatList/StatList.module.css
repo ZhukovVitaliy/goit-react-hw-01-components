@@ -1,0 +1,20 @@
+.item {
+  /* display: block;
+  align-items: center;
+  justify-content: space-between; */
+
+  padding: 20px;
+}
+
+.label {
+  color: black;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.71;
+  text-align: center;
+}
+
+.percentage {
+  display: block;
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "username": "Jacques Gluke",
+    "tag": "jgluke",
+    "location": "Ocho Rios, Jamaica",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "stats": {
+      "followers": 5603,
+      "views": 4827,
+      "likes": 1308
+    }
+  },
+  {
+    "username": "Kiwi Fago",
+    "tag": "fgnj",
+    "location": "Ocho Rios, Jamaica",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "stats": {
+      "followers": 3245,
+      "views": 8657,
+      "likes": 2345
+    }
+  },
+  {
+    "username": "Mango Beme",
+    "tag": "ddfbh",
+    "location": "Ocho Rios, Jamaica",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "stats": {
+      "followers": 978,
+      "views": 2345,
+      "likes": 9776
+    }
+  }
+]

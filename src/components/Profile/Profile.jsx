@@ -1,34 +1,60 @@
-// import PropTypes from 'prop-types';
-// import css from './Profile.module.css';
+import PropTypes from 'prop-types';
+import css from './Profile.module.css';
 
-export const Profile = () => {
+export const Profile = ({
+  username,
+  tag,
+  location,
+  avatar,
+  followers,
+  views,
+  likes,
+}) => {
   return (
-    <div class="profile">
-      <div class="description">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-          class="avatar"
-        />
-        <p class="name">Petra Marica</p>
-        <p class="tag">@pmarica</p>
-        <p class="location">Salvador, Brasil</p>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt={username} className={css.avatar} width={50} />
+        <p className={css.title}>{username}</p>
+        <p className={css.text}>@{tag}</p>
+        <p className={css.text}>{location}</p>
       </div>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">1000</span>
+      <ul className={css.stats}>
+        <li className={css.item}>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>{followers}</span>
         </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">2000</span>
+        <li className={css.item}>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>{views}</span>
         </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">3000</span>
+        <li className={css.item}>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
   );
 };
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
+
+// {
+//   "username": "Jacques Gluke",
+//   "tag": "jgluke",
+//   "location": "Ocho Rios, Jamaica",
+//   "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+//   "stats": {
+//     "followers": 5603,
+//     "views": 4827,
+//     "likes": 1308
+//   }
+// }
